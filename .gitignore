@@ -1,0 +1,67 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependency directories
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+
+# Local environment files
+.env
+.env.local
+.env.*.local
+
+# Editor directories and files
+.vscode/
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Optional npm cache directory
+.npm/
+
+# Yarn Integrity file
+.yarn-integrity
+
+# Mac system files
+*.DS_Store
+
+# Temporary files
+*.tmp
+*.temp
+
+# Debug and crash files
+*.pid
+*.pid.lock
+
+# Vite specific
+vite.config.ts
+vite.config.js
+
+# Coverage directory
+coverage/
+
+# Storybook
+out/
+storybook-static/
+
+# Local logs
+*.log
+
+# Lock files (optional, depending on your preferences)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
