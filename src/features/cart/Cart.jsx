@@ -25,6 +25,7 @@ const fakeCart = [
 ];
 
 function Cart() {
+  // eslint-disable-next-line no-unused-vars
   const cart = fakeCart;
 
   return (
