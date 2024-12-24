@@ -1,4 +1,8 @@
+import PropTypes from 'prop-types'
+
+import { formatCurrency } from '../../utilities/helpers';
 function MenuItem({ pizza }) {
+  // eslint-disable-next-line no-unused-vars
   const { id, name, unitPrice, ingredients, soldOut, imageUrl } = pizza;
 
   return (
@@ -14,5 +18,9 @@ function MenuItem({ pizza }) {
     </li>
   );
 }
+
+MenuItem.propTypes = {
+    pizza: PropTypes.object
+};
 
 export default MenuItem;
