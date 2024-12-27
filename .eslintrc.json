@@ -1,3 +1,7 @@
 {
-    "extends": "react-app"
+  "extends": "react-app",
+  "rules": {
+    "react/jsx-max-props-per-line": [1, { "when": "always" }],
+    "react/jsx-first-prop-new-line": ["error", "multiline"]
+  }
 }
