@@ -3,18 +3,18 @@ import { useLoaderData } from "react-router-dom";
 import { getMenu } from "../../services/apiRestaurant";
 import MenuItem from "./MenuItem";
 function Menu() {
-  const menu= useLoaderData();
+  const menu = useLoaderData();
   return (
-    <ul>
-      {menu.map(pizza => {
-        return  <MenuItem key={pizza.id} pizza={pizza}/>
+    <ul className="grid gap-y-4 p-2">
+      {menu.map((pizza) => {
+        return <MenuItem key={pizza.id} pizza={pizza} />;
       })}
     </ul>
   );
 }
 
-export async function loader(){
-  const menu= await getMenu();
+export async function loader() {
+  const menu = await getMenu();
   return menu;
 }
 
